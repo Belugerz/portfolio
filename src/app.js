@@ -79,7 +79,7 @@ function openPanel(panel) {
     home.inert = true;
     panel.querySelector('.rise-panel').scrollTop = 0;
     if (panel.id === 'skillsPanel') setupSkills();
-    replayRise(panel);                   // <- tambah
+    replayRise(panel);
 }
 
 function closePanel(panel) {
@@ -91,7 +91,7 @@ function closePanel(panel) {
         if (e.propertyName !== 'transform') return;
         document.body.classList.remove('panel-open');
         home.inert = false;
-        resetRise(panel);                // <- tambah: reset setelah panel udah di bawah
+        resetRise(panel);
         inner.removeEventListener('transitionend', onHidden);
     });
 }
@@ -115,7 +115,6 @@ function setupSkills() {
         : skillCards[0].offsetWidth;
     speed = PER_CARD / cardStep;
 
-    // total tinggi = 1 layar + jarak scroll yang dibutuhkan untuk geser semuanya
     skillsSection.style.height = (window.innerHeight + maxX * speed) + 'px';
     updateSkills();
 }
@@ -165,7 +164,7 @@ document.querySelectorAll('.image-project-container').forEach((box) => {
     slides.appendChild(track);
     box.prepend(slides);
 
-    // geser pita: gambar ke-current pas di jendela, + offset px waktu di-drag
+
     function move(px = 0, animate = true) {
         track.style.transition = animate ? '' : 'none';
         track.style.transform = `translateX(calc(${-current * 100}% + ${px}px))`;
@@ -190,7 +189,7 @@ document.querySelectorAll('.image-project-container').forEach((box) => {
         if (delay) timer = setInterval(() => goTo((current + 1) % n), delay);
     }
 
-    // ---- drag ----
+
     let dragging = false;
     let startX = 0;
     let dx = 0;
@@ -206,18 +205,18 @@ document.querySelectorAll('.image-project-container').forEach((box) => {
     slides.addEventListener('pointermove', (e) => {
         if (!dragging) return;
         dx = e.clientX - startX;
-        // di gambar pertama/terakhir, tarikannya dibikin berat (efek mentok)
+
         if ((current === 0 && dx > 0) || (current === n - 1 && dx < 0)) dx *= 0.3;
-        move(dx, false); // pita ngikutin kursor tanpa animasi
+        move(dx, false);
     });
 
     function endDrag() {
         if (!dragging) return;
         dragging = false;
         const limit = slides.offsetWidth * 0.2;
-        if (dx < -limit && current < n - 1) goTo(current + 1);      // tarik kiri = berikutnya
-        else if (dx > limit && current > 0) goTo(current - 1);      // tarik kanan = sebelumnya
-        else move();                                                // kurang jauh = balik
+        if (dx < -limit && current < n - 1) goTo(current + 1);
+        else if (dx > limit && current > 0) goTo(current - 1);
+        else move();
         startAuto();
     }
 
@@ -232,7 +231,7 @@ const reloadText = document.querySelector('.reload-text');
 new IntersectionObserver((entries, obs) => {
     if (entries[0].isIntersecting) {
         reloadText.classList.add('drawn');
-        obs.disconnect(); // cukup sekali
+        obs.disconnect();
     }
 }, { threshold: 0.3 }).observe(reloadText);
 
@@ -255,7 +254,7 @@ function splitRise(el) {
         return mask;
     }
 
-    // jalan ke semua teks di dalam elemen; tag lain kayak <br> dibiarkan utuh
+
     function walk(node) {
         [...node.childNodes].forEach((child) => {
             if (child.nodeType === Node.ELEMENT_NODE) return walk(child);
@@ -302,18 +301,16 @@ document.querySelectorAll('.rise-block').forEach((el) => {
     const inner = document.createElement('div');
     inner.className = 'rb-inner';
 
-    // samain tipe tampilan dengan induknya (flex tetap flex, block tetap block)
     const display = getComputedStyle(el).display;
     inner.style.display = display === 'inline' ? 'inline-block' : display;
 
-    while (el.firstChild) inner.appendChild(el.firstChild);  // pindahin semua isi ke dalam
+    while (el.firstChild) inner.appendChild(el.firstChild);
     el.appendChild(inner);
 
     riseObserver.observe(el);
 })
 
 
-// sembunyiin lagi semua teks animasi di panel (dipanggil setelah panel ketutup)
 function resetRise(panel) {
     panel.querySelectorAll('.rise-text, .rise-block').forEach((el) => {
         el.classList.remove('show');
@@ -321,7 +318,6 @@ function resetRise(panel) {
     });
 }
 
-// mulai ngawasin lagi, biar animasinya main pas kelihatan (dipanggil pas panel dibuka)
 function replayRise(panel) {
     panel.querySelectorAll('.rise-text, .rise-block').forEach((el) => {
         riseObserver.observe(el);
