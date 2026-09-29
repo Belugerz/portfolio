@@ -6,7 +6,7 @@ body {
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/fonts/Urbanist.ttf') format('truetype');
+    src: url('fonts/Urbanist.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -14,7 +14,7 @@ body {
 
 @font-face {
     font-family: 'FOT';
-    src: url('/fonts/FOT.otf') format('opentype');
+    src: url('fonts/FOT.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -22,7 +22,7 @@ body {
 
 @font-face {
     font-family: 'Urbanist-Bold';
-    src: url('/fonts/Urbanist-Bold.ttf') format('truetype');
+    src: url('fonts/Urbanist-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -30,7 +30,7 @@ body {
 
 @font-face {
     font-family: 'BMSpace';
-    src: url('/fonts/BMSPACE.ttf') format('truetype');
+    src: url('fonts/BMSPACE.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -38,7 +38,7 @@ body {
 
 @font-face {
     font-family: 'Syncopate-Bold';
-    src: url('/fonts/Syncopate-Bold.ttf') format('TrueType');
+    src: url('fonts/Syncopate-Bold.ttf') format('TrueType');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -46,7 +46,7 @@ body {
 
 @font-face {
     font-family: 'Syncopate';
-    src: url('/fonts/Syncopate-Regular.ttf') format('TrueType');
+    src: url('fonts/Syncopate-Regular.ttf') format('TrueType');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
