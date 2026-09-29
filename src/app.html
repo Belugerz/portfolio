@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/p3r.ico">
+</head>
+<body class="loading">
+<div class="loading-screen">
+    <div class="loading-water">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave"
+                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(2, 158, 235, 0.7)"></use>
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(2, 158, 235, 0.5)"></use>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(2, 158, 235, 0.2)"></use>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#029eeb"></use>
+            </g>
+        </svg>
+    </div>
+    <div class="loading-letter">
+        <div class="loading-big-letter">
+            <h1>Memento Mori</h1>
+        </div>
+        <div class="loading-desc-letter">
+            <span>Remember, You Will Die.</span>
+            <span>Time never waits.</span>
+            <span>It delivers all equally to the same end.</span>
+        </div>
+    </div>
+</div>
+<div id="home" class="screen active">
+    <header class="top">
+        <div class="nav-box">
+            <ul class="nav">
+                <li data-panel="aboutPanel">ABOUT ME</li>
+                <li data-panel="skillsPanel">SKILLS</li>
+                <li data-panel="projectsPanel">PROJECTS</li>
+                <li data-scroll="contacts">CONTACTS</li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="front-word">
+            <h1> Wesley <br> Peyfendo's <br> Portofolio </h1>
+        </div>
+        <div class="video-background-container">
+            <video preload="auto" muted="" playsinline="" id="pc-fv-movie1">
+                <source src="../assets/background1.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop preload="auto" muted="" playsinline="" id="pc-fv-movie2">
+                <source src="../assets/backgrounds.mp4" type="video/mp4">
+            </video>
+            <div class="overlay">
+                <img src="../assets/fv_hologram3">
+            </div>
+            <div class="scroll-box">
+                <span class="scroll-text"> SCROLL </span>
+                <div class="scroll-track">
+                    <span class="scroll-dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rise-wrap" id="aboutPanel">
+    <div class="rise-panel">
+        <div id="Aboutme" class="screen">
+            <div class="background">
+                <div class="wave-bg">
+                    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                         style="display:block; width:100%; height:auto;">
+                        <path fill="#e5eef7"
+                              d="M0,70 C160,40 320,10 490,10 C680,10 820,75 1000,75 C1180,75 1320,40 1440,20 L1440,400 L0,400 Z"/>
+                    </svg>
+                </div>
+            </div>
+            <button id="closeBtn" class="close-btn" aria-label="Tutup">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <line x1="2" y1="2" x2="58" y2="58"/>
+                    <line x1="58" y1="2" x2="2" y2="58"/>
+                </svg>
+            </button>
+            <div class="container-aboutMe">
+                <div class="leftcontent">
+                    <div class="section-text">
+                        <p id="smaller-text" class="rise-text">About me</p>
+                        <h1 id="about" class="rise-text">About</h1>
+                    </div>
+                </div>
+                <div class="divider">
+                </div>
+                <div class="rightcontent">
+                    <div class="section-text rise-block">
+                        <div id="yapping-text">Wesley Peyfendo • 19 • Computer Science Binus University <br> Computer
+                            Science student at BINUS University with experience building projects using Python,
+                            TypeScript, JavaScript, and SQL. Interested in machine learning, backend development, and
+                            building practical software.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div id="image-card-1">
+                    <img src="../assets/aboutme/wesley.webp" alt="">
+                </div>
+                <div id="image-card-2">
+                    <img src="../assets/aboutme/wesley2.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rise-wrap" id="skillsPanel">
+    <div class="rise-panel">
+        <div id="Skills">
+            <section class="skills-scroll">
+                <div class="skills-sticky">
+                    <button id="closeBtnz" class="close-btn" aria-label="Tutup">
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <line x1="2" y1="2" x2="58" y2="58"/>
+                            <line x1="58" y1="2" x2="2" y2="58"/>
+                        </svg>
+                    </button>
+                    <div class="skills-track">
+                        <div class="SkillText" data-color="#5ba4d7">
+                            <h1 id="skillWord" class="rise-text">Skills</h1>
+                            <span id="description" class="rise-block">Here are the skills that i cultivated whilst in Binus University</span>
+                        </div>
+                        <div class="skill-card" data-color="#f0db4f">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+                            </div>
+                            <p class="skill-label">Javascript</p>
+                        </div>
+
+                        <div class="skill-card" data-color="#3178c6">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg">
+                            </div>
+                            <p class="skill-label">Typescript</p>
+                        </div>
+
+                        <div class="skill-card" data-color="#00589c">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
+                            </div>
+                            <p class="skill-label">C</p>
+                        </div>
+
+                        <div class="skill-card" data-color="#f16529">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg">
+                            </div>
+                            <p class="skill-label">HTML5</p>
+                        </div>
+
+                        <div class="skill-card" data-color="#2965f1">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg">
+                            </div>
+                            <p class="skill-label">CSS3</p>
+                        </div>
+
+                        <div class="skill-card" data-color="#366f9f"
+                             data-pattern="linear-gradient(135deg, #366f9f 50%, #ffd03f  50%)">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
+                            </div>
+                            <p class="skill-label">Python</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="rise-wrap" id="projectsPanel">
+    <div class="rise-panel">
+        <div id="projects" class="screen">
+            <div class="close-sticky">
+                <button id="closeBtnzz" class="close-btn" aria-label="Tutup">
+                    <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <line x1="2" y1="2" x2="58" y2="58"/>
+                        <line x1="58" y1="2" x2="2" y2="58"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="background">
+                <div class="wave-bg">
+                    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                         style="display:block; width:100%; height:auto;">
+                        <path fill="#e5eef7"
+                              d="M0,70 C160,40 320,10 490,10 C680,10 820,75 1000,75 C1180,75 1320,40 1440,20 L1440,400 L0,400 Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div id="header-project">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-content-container">
+                <div class="projects-imagecontainer-left" id="firstcard">
+                    <div class="image-project-container" data-interval="4000">
+                        <img src="../assets/pjct-2/pjct-2-1.png" alt="" class="active">
+                        <img src="../assets/pjct-2/pjct-2-2.png" alt="">
+                        <img src="../assets/pjct-2/pjct-2-3.png" alt="">
+                        <img src="../assets/pjct-2/pjct-2-4.png" alt="">
+                        <img src="../assets/pjct-2/pjct-2-5.png" alt="">
+                        <div class="slide-dots"></div>
+                    </div>
+                    <div class="desc-words">
+                        <span class="header-desc-text rise-block" id="project1"> Explainable Deepfake Face Detection: Comparative Analysis of Grad-CAM and LIME Across CNN-based Models on FaceForensics++ Benchmark </span>
+                        <div class="desc-text rise-block">
+                            <span> Research comparing Grad-CAM and LIME explanations across XceptionNet, EfficientNet-B0, and ResNet50 for deepfake detection on FaceForensics++. </span>
+                            <span> Found that the two XAI methods agree only weakly, and that their agreement differs significantly by architecture (EfficientNet-B0 > ResNet50 > XceptionNet).</span>
+                            <span> Built with Python, PyTorch, and LIME, and submitted to ICTIM 2026. </span>
+                            <span id="sidenote">(Paper is not published yet)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-imagecontainer-right" id="secondcard">
+                    <div class="image-project-container">
+                        <img src="../assets/pjct-3/pjct-3-1.png" alt="" class="active">
+                        <img src="../assets/pjct-3/pjct-3-3.png" alt="">
+                        <img src="../assets/pjct-3/pjct-3-2.png" alt="">
+                        <div class="slide-dots"></div>
+                    </div>
+                    <div class="desc-words">
+                        <span class="header-desc-text rise-text" id="project2"> URL shortener </span>
+                        <div class="desc-text rise-block">
+                            <span> A URL shortening web app built with Express.js, TypeScript, and SQLite. </span>
+                            <span> Generates unique base62-encoded codes for each URL and automatically redirects to the original link when accessed.</span>
+                            <span> Implements a REST API with persistent storage and click tracking for every shortened link. </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="project-content-container">
+                    <div class="projects-imagecontainer-left" id="thirdcard">
+                        <div class="image-project-container">
+                            <img src="../assets/pjct-4/pjct-4-1.png" alt="" class="active">
+                            <img src="../assets/pjct-4/pjct-4-2.png" alt="">
+                            <img src="../assets/pjct-4/pjct-4-3.png" alt="">
+                            <div class="slide-dots"></div>
+                        </div>
+                        <div class="desc-words">
+                            <span class="header-desc-text rise-text" id="project3"> Pastebin Clone </span>
+                            <div class="desc-text rise-block">
+
+                                <span> Built with Express.js and TypeScript, this app lets users submit text and get a unique shareable link instantly. </span>
+                                <span> The backend generates a short code per submission, stores the content, and serves it back when the link is visited.</span>
+                                <span> This project strengthened core backend skills like routing and ID generation, building on an earlier URL shortener project. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content-container">
+                    <div class="projects-imagecontainer-right" id="fourthcard">
+                        <div class="image-project-container">
+                            <img src="../assets/pjct-5/pjct-5-1.png" alt="" class="active">
+                            <img src="../assets/pjct-5/pjct-5-2.png" alt="">
+                            <img src="../assets/pjct-5/pjct-5-3.png" alt="">
+                            <img src="../assets/pjct-5/pjct-5-4.png" alt="">
+                            <div class="slide-dots"></div>
+                        </div>
+                        <div class="desc-words">
+                            <span class="header-desc-text rise-text" id="project4"> Sustainable Energy Analysis </span>
+                            <div class="desc-text rise-block">
+                                <span> A data mining project analyzing global sustainable energy trends across 130+ countries from 2000 to 2020, exploring relationships between GDP, electricity access, renewable share, and energy intensity.</span>
+                                <span> The project uncovered key insights such as the inverse relationship between electricity access and renewable share, and how all income groups improved energy efficiency over two decades.</span>
+                                <span> Built using Python with exploratory data analysis, statistical correlation, and multi-variable visualization techniques. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- i'll add more shit here later lmao -->
+<div class="bridge">
+    <div class="text-container">
+        <div class="small-line"></div>
+        <div class="small-text-line">
+            <span>Dark Hour</span>
+            <span>While i breathe, i hope</span>
+            <span>Rise again</span>
+        </div>
+    </div>
+    <svg class="reload-text" viewBox="-40 -5 1960 395" xmlns="http://www.w3.org/2000/svg" aria-label="RELOAD">
+        <path pathLength="1"
+              d="M255.7,374.9v3.1c-6.6,1-28,2-41.8,2c-33.6,0-42.8-18.3-105.9-153.3c-9.7-19.4-20.4-22.9-36.7-22.9H44.8v110.5c0,37.7,1.5,60.6,36.2,60.6v3.1H-36.7v-3.1C-2,374.9,0,351.9,0,314.3V70.8c0-37.7-2-60.6-36.7-60.6V7.1H89.6c78.4,0,123.8,38.7,123.8,97.8c0,50.4-38.7,81.5-83,93.7v1c14.8,9.2,27,30.6,38.2,52.5C218,347.4,228.7,365.7,255.7,374.9L255.7,374.9z M44.8,195.6H83c55.5,0,83-32.1,83-87.6c0-53.5-25.5-92.7-82.5-92.7H64.2c-12.2,0-19.4,6.1-19.4,18.3C44.8,33.6,44.8,195.6,44.8,195.6z"/>
+        <path pathLength="1"
+              d="M562.9,292.4l-11.7,85.6H294.5v-3.1c34.6,0,36.7-22.9,36.7-60.6V70.8c0-37.7-2-60.6-36.7-60.6V7.1h249.1l6.6,76.4h-3.1c-26-58.1-42.8-68.3-98.3-68.3H376v165.5h57c45.8,0,56-12.2,64.7-49.9h3.1v111.5h-3.1C489,206.3,478.8,189,433,189h-57v156.9c0,15.3,4.6,23.9,20.4,23.9h60.1c54,0,73.3-9.2,103.4-77.4L562.9,292.4L562.9,292.4z"/>
+        <path pathLength="1"
+              d="M603.1,377.9v-3.1c34.6,0,36.7-22.9,36.7-60.6V70.8c0-37.7-2-60.6-36.7-60.6V7.1h118.2v3.1c-34.6,0-36.7,22.9-36.7,60.6v275.1c0,15.8,4.6,23.9,19.9,23.9h35.7c55,0,75.9-12.2,107.5-82h3.1l-12.7,90.2L603.1,377.9L603.1,377.9z"/>
+        <path pathLength="1"
+              d="M890.4,193.5C890.4,79.4,957.2,1,1056,1c99.8,0,165,74.4,165,190.5c0,114.1-67.2,192.5-166,192.5C955.1,384,890.4,309.7,890.4,193.5L890.4,193.5z M1170.6,192.5c0-102.9-41.3-184.4-115.6-184.4S940.4,86.6,940.4,192.5c0,102.9,41.8,184.4,115.6,184.4C1130.4,376.9,1170.6,298.5,1170.6,192.5L1170.6,192.5z"/>
+        <path pathLength="1"
+              d="M1495.2,312.7c15.3,42.8,25,60.1,46.4,62.1v3.1h-116.1v-3.1c28.5-2,37.7-18.8,27-49.9l-27-76.9h-120.2l-12.2,34.6c-20.9,60.1-21.4,89.1,15.3,92.2v3.1h-84v-3.1c24.4-2.5,37.7-33.6,59.1-95.2L1381.7,2h4.1L1495.2,312.7z M1309.3,235.8h112.1l-56-160.4L1309.3,235.8L1309.3,235.8z"/>
+        <path pathLength="1"
+              d="M1582.2,377.9v-3.1c34.6,0,36.7-22.9,36.7-60.6V70.8c0-37.7-2-60.6-36.7-60.6V7.1h147.7c116.1,0,182.9,66.2,182.9,180.8c0,117.2-73.9,190-185.9,190L1582.2,377.9L1582.2,377.9z M1862.3,191c0-102.4-43.3-175.7-136-175.7H1683c-12.2,0-19.4,6.1-19.4,18.3v303.6c0,23.4,13.2,32.6,65.2,32.6C1820.1,369.8,1862.3,300.5,1862.3,191L1862.3,191z"/>
+    </svg>
+</div>
+<div class="contacts" id="contacts">
+    <div class="contact-contents">
+        <div class="image-contacts-container">
+            <img src="../assets/p3rlogo.webp" alt="">
+        </div>
+        <div class="SPEC">
+            <div class="content-header">
+                <h1>SPEC</h1>
+            </div>
+            <div class="contents-spec">
+                <div class="email">
+                    <span>Email</span>
+                    <span>wesleypeyfendo@gmail.com</span>
+                </div>
+                <div class="Linkedin">
+                    <span>Linkedin</span>
+                    <span>wesleypeyfendo</span>
+                    <span id="little-text-contents"> not on here much :/</span>
+                </div>
+                <div class="github">
+                    <span>Github</span>
+                    <span>Belugerz</span>
+                </div>
+                <div class="line">
+                    <span>Line</span>
+                    <span>Belugers</span>
+                </div>
+                <div class="instagram">
+                    <span>Instagram</span>
+                    <span>mewurin</span>
+                </div>
+            </div>
+        </div>
+        <div class="link">
+            <div class="content-header">
+                <h1>LINK</h1>
+            </div>
+            <div class="contents-link">
+                <a class="blank"></a>
+                <a class="linkedin-link" href="https://www.linkedin.com/in/wesley-peyfendo-ba33112a1/">Linkedin Link</a>
+                <a href="https://github.com/Belugerz">Github Link</a>
+                <a href="https://line.me/ti/p/j9V7GJ6EWs">Line Link</a>
+                <a href="https://www.instagram.com/mewurin._/">Instagram Link</a>
+            </div>
+        </div>
+    </div>
+    <div class="contacts-line-wrapper">
+        <div class="horizontal-content-line">
+        </div>
+        <div class="hehe">
+            <p>this is my first "big" project and im technically still learning, i am using persona 3 reload web as a
+                reference, sorry if it sux TT</p>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
